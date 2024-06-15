@@ -1,0 +1,38 @@
+body,
+html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 550px;
+    height: 700px;
+    background-color: rgb(10, 32, 39);
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.imagem img {
+    height: 150px;
+    width:  150px;
+    border-radius: 100px;
+    border: #fff solid 6px;
+}
+
+#teste{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
