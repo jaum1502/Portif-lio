@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 body,
 html {
     box-sizing: border-box;
@@ -6,17 +8,42 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    
 }
+
+body, html {
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
+    background-image: url('photo-1460355976672-71c3f0a4bdac.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
+}
+
 
 .container {
     width: 550px;
     height: 700px;
     background-color: rgb(10, 32, 39);
-    border: 5px solid #ff0000;
+    border: 5px solid #fff;
     border-radius: 20px;
 }
 
-.imagem{
+.imagem {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,13 +53,30 @@ html {
 
 .imagem img {
     height: 150px;
-    width:  150px;
+    width: 150px;
     border-radius: 100px;
     border: #fff solid 6px;
 }
 
-#teste{
-    color:white;
+#teste {
+    color: white;
     display: flex;
     justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 880;
+    font-style: normal;
+}
+
+.texto {
+    color: #fff;
+    font-size: 23px;
+    width: 500px;
+    margin-left: 25px;
+    line-height: 45px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
 }
