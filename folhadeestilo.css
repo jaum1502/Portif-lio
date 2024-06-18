@@ -37,20 +37,24 @@
     }
 
     .texto1 {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
         position: absolute;
         top: 50px;
         left: 50px;
         display: inline-block;
-        font-size: 50px;
+        font-size: 40px;
         color: #fff;
     }
 
-    .texto1 img {
+    .texto1 .t1 {
         top: 75px;
         left: 0;
         visibility: hidden;
         opacity: 0;
-        width: 240px;
+        width: 400px;
         background-color: rgba(0, 0, 0, 0.445);
         color: #fff;
         text-align: center;
@@ -61,7 +65,7 @@
         transition: visibility 0s, opacity 0.5s linear;
     }
 
-    .texto1:hover img {
+    .texto1:hover .t1 {
         visibility: visible;
         opacity: 1;
     }
@@ -137,31 +141,31 @@
 
     .texto4 .t4 {
         bottom: 75px;
-        right: 0; 
-    visibility:hidden; 
-    opacity :0; 
-    width :240px; 
-    background-color :rgba(0,0,0,0.445); 
-    color :#fff; 
-    text-align :center; 
-    border-radius :6px; 
-    padding :5px; 
-    position:absolute; 
-    z-index :1; 
-    transition :visibility o s ,opacity o.5s linear ;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 240px;
+        background-color: rgba(0, 0, 0, 0.445);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        transition: visibility o s, opacity o.5s linear;
     }
 
     .texto4:hover .t4 {
-    visibility :visible; 
-    opacity :1 ;
+        visibility: visible;
+        opacity: 1;
     }
-        
+
 
     .container {
         width: 550px;
         height: 700px;
         background-color: rgb(10, 32, 39);
-        border: 5px solid #fff;
+        border: 5px solid #b700ff;
         border-radius: 20px;
     }
 
