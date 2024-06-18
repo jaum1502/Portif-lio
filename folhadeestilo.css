@@ -1,82 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-body,
-html {
-    box-sizing: border-box;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    position: absolute;
-    
-}
+    body,
+    html {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
 
-body, html {
-    position: relative;
-    overflow: hidden;
-}
+    }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
-    background-image: url('photo-1460355976672-71c3f0a4bdac.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
-}
+    body,
+    html {
+        position: relative;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        /* Garante que o fundo fique atrás do conteúdo */
+        background-image: url('photo-1460355976672-71c3f0a4bdac.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(10px);
+    }
+
+    .texto1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        display: inline-block;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .texto1 img {
+        top: 75px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 240px;
+        background-color: rgba(0, 0, 0, 0.445);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .texto1:hover img {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .texto2 {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: inline-block;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .texto2 .t2 {
+        top: 75px;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 240px;
+        background-color: rgba(0, 0, 0, 0.445);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .texto2:hover .t2 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .texto3 {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        display: inline-block;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .texto3 .t3 {
+        bottom: 75px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 240px;
+        background-color: rgba(0, 0, 0, 0.445);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .texto3:hover .t3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .texto4 {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        display: inline-block;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .texto4 .t4 {
+        bottom: 75px;
+        right: 0; 
+    visibility:hidden; 
+    opacity :0; 
+    width :240px; 
+    background-color :rgba(0,0,0,0.445); 
+    color :#fff; 
+    text-align :center; 
+    border-radius :6px; 
+    padding :5px; 
+    position:absolute; 
+    z-index :1; 
+    transition :visibility o s ,opacity o.5s linear ;
+    }
+
+    .texto4:hover .t4 {
+    visibility :visible; 
+    opacity :1 ;
+    }
+        
+
+    .container {
+        width: 550px;
+        height: 700px;
+        background-color: rgb(10, 32, 39);
+        border: 5px solid #fff;
+        border-radius: 20px;
+    }
+
+    .imagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
 
 
-.container {
-    width: 550px;
-    height: 700px;
-    background-color: rgb(10, 32, 39);
-    border: 5px solid #fff;
-    border-radius: 20px;
-}
+    .imagem img {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        border: #fff solid 6px;
+    }
 
-.imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
+    #teste {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 880;
+        font-style: normal;
+    }
 
+    .texto {
+        color: #fff;
+        font-size: 23px;
+        width: 500px;
+        margin-left: 25px;
+        line-height: 45px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
 
-.imagem img {
-    height: 150px;
-    width: 150px;
-    border-radius: 100px;
-    border: #fff solid 6px;
-}
-
-#teste {
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 880;
-    font-style: normal;
-}
-
-.texto {
-    color: #fff;
-    font-size: 23px;
-    width: 500px;
-    margin-left: 25px;
-    line-height: 45px;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    
-}
+    }
