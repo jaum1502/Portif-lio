@@ -41,11 +41,12 @@
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
+        font-size: 2.6vw;
         position: absolute;
         top: 50px;
         left: 50px;
         display: inline-block;
-        font-size: 40px;
+        
         color: #fff;
     }
 
@@ -62,7 +63,7 @@
         padding: 5px 0;
         position: absolute;
         z-index: 1;
-        transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0s, opacity 1s linear;
     }
 
     .texto1:hover .t1 {
@@ -71,11 +72,15 @@
     }
 
     .texto2 {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2.6vw;
         position: absolute;
         top: 50px;
         right: 50px;
         display: inline-block;
-        font-size: 50px;
         color: #fff;
     }
 
@@ -92,7 +97,7 @@
         padding: 5px 0;
         position: absolute;
         z-index: 1;
-        transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0s, opacity 1s linear;
     }
 
     .texto2:hover .t2 {
@@ -101,11 +106,15 @@
     }
 
     .texto3 {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2.6vw;
         position: absolute;
         bottom: 50px;
         left: 50px;
         display: inline-block;
-        font-size: 50px;
         color: #fff;
     }
 
@@ -122,7 +131,7 @@
         padding: 5px 0;
         position: absolute;
         z-index: 1;
-        transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0s, opacity 1s linear;
     }
 
     .texto3:hover .t3 {
@@ -131,11 +140,15 @@
     }
 
     .texto4 {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2.6vw;
         position: absolute;
         bottom: 50px;
         right: 50px;
         display: inline-block;
-        font-size: 50px;
         color: #fff;
     }
 
@@ -152,7 +165,7 @@
         padding: 5px;
         position: absolute;
         z-index: 1;
-        transition: visibility o s, opacity o.5s linear;
+        transition: visibility 0s, opacity 1s linear;
     }
 
     .texto4:hover .t4 {
@@ -180,10 +193,14 @@
 
     .imagem img {
         width: 10vw;
-        height: 10vw; /* Manter a mesma largura e altura para garantir que a imagem permaneça redonda */
-        border-radius: 50%; /* Usa 50% para garantir que a imagem seja circular */
-        border: 0.3vw solid #fff; /* Usar unidade relativa para a borda */
-        object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+        height: 10vw;
+        /* Manter a mesma largura e altura para garantir que a imagem permaneça redonda */
+        border-radius: 50%;
+        /* Usa 50% para garantir que a imagem seja circular */
+        border: 0.3vw solid #fff;
+        /* Usar unidade relativa para a borda */
+        object-fit: cover;
+        /* Garante que a imagem preencha a área sem distorcer */
     }
 
     #teste {
@@ -195,13 +212,12 @@
         font-optical-sizing: auto;
         font-weight: 880;
         font-style: normal;
-        background-color: green;
     }
 
     .texto {
 
         color: #fff;
-        font-size: 1.34vw;
+        font-size: 1.2vw;
         width: 25vw;
         height: 40vh;
         margin-left: 2.4vh;
@@ -212,3 +228,7 @@
         font-style: normal;
 
     }
+
+
+
+    @media (max-width: 600px) {}
