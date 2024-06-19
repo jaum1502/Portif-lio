@@ -162,10 +162,10 @@
 
 
     .container {
-        width: 550px;
-        height: 700px;
+        width: 27vw;
+        height: 75vh;
         background-color: rgb(10, 32, 39);
-        border: 5px solid #b700ff;
+        border: 5px solid #ffffff;
         border-radius: 20px;
     }
 
@@ -173,33 +173,39 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 1vw;
+        width: 28vw;
+        height: 19vh;
     }
 
-
     .imagem img {
-        height: 150px;
-        width: 150px;
-        border-radius: 100px;
-        border: #fff solid 6px;
+        width: 10vw;
+        height: 10vw; /* Manter a mesma largura e altura para garantir que a imagem permaneça redonda */
+        border-radius: 50%; /* Usa 50% para garantir que a imagem seja circular */
+        border: 0.3vw solid #fff; /* Usar unidade relativa para a borda */
+        object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
     }
 
     #teste {
         color: white;
+        font-size: 2vw;
         display: flex;
         justify-content: center;
         font-family: "Oswald", sans-serif;
         font-optical-sizing: auto;
         font-weight: 880;
         font-style: normal;
+        background-color: green;
     }
 
     .texto {
+
         color: #fff;
-        font-size: 23px;
-        width: 500px;
-        margin-left: 25px;
-        line-height: 45px;
+        font-size: 1.34vw;
+        width: 25vw;
+        height: 40vh;
+        margin-left: 2.4vh;
+        line-height: 4.5vh;
         font-family: "Oswald", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
