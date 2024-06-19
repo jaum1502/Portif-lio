@@ -42,7 +42,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: #fff solid 3px;
+         border: #ffffffdf solid 0.2vw;;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -52,8 +52,8 @@
         font-style: normal;
         font-size: 2.6vw;
         position: absolute;
-        top: 50px;
-        left: 50px;
+        top: 3vh;
+        left: 1vw;
         border-radius: 10px;
         color: #fff;
 
@@ -88,7 +88,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: #fff solid 3px;
+         border: #ffffffdf solid 0.2vw;;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -99,8 +99,8 @@
         font-style: normal;
         font-size: 2.6vw;
         position: absolute;
-        top: 50px;
-        right: 50px;
+        top: 3vh;
+        right: 1vw;
 
         color: #fff;
     }
@@ -134,7 +134,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: #fff solid 3px;
+         border: #ffffffdf solid 0.2vw;;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -145,8 +145,8 @@
         font-style: normal;
         font-size: 2.6vw;
         position: absolute;
-        bottom: 50px;
-        left: 50px;
+        bottom: 3vh;
+        left: 1vw;
         color: #fff;
     }
 
@@ -178,7 +178,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: #fff solid 3px;
+         border: #ffffffdf solid 0.2vw;;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -189,8 +189,8 @@
         font-style: normal;
         font-size: 2.6vw;
         position: absolute;
-        bottom: 50px;
-        right: 50px;
+        bottom: 3vh;
+        right: 1vw;
         color: #fff;
     }
 
