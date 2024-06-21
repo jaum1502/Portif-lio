@@ -56,7 +56,22 @@
 
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const numberOfSnowflakes = 50; // Number of snowflakes to generate
+            const body = document.body;
 
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random speed between 2 and 5 seconds
+                snowflake.style.animationDelay = `${Math.random() * 2}s`; // Random delay
+                snowflake.style.opacity = `${Math.random()}`; // Random opacity
+                body.appendChild(snowflake);
+            }
+        });
+    </script>
 </body>
 
 </html>

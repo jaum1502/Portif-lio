@@ -42,7 +42,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-         border: #ffffffdf solid 0.2vw;;
+        border: #ffffffdf solid 0.2vw;
+        ;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -88,7 +89,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-         border: #ffffffdf solid 0.2vw;;
+        border: #ffffffdf solid 0.2vw;
+        ;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -134,7 +136,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-         border: #ffffffdf solid 0.2vw;;
+        border: #ffffffdf solid 0.2vw;
+        ;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -178,7 +181,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-         border: #ffffffdf solid 0.2vw;;
+        border: #ffffffdf solid 0.2vw;
+        ;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -269,6 +273,37 @@
 
     }
 
+    @keyframes snow {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+
+    .snowflake {
+        position: absolute;
+        top: -10px;
+        width: 0.1px;
+        height: 0.1px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: snow linear infinite;
+        z-index: -1;
+        /* In front of the background but behind other content */
+    }
+
+    /* Additional styling for larger screens */
+    @media (min-width: 600px) {
+        .snowflake {
+            width: 4px;
+            height: 4px;
+        }
 
 
-    @media (max-width: 600px) {}
+
+      
+    }
