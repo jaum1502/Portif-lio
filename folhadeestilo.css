@@ -224,7 +224,7 @@
     .container {
         width: 27vw;
         height: 80vh;
-        background-color: rgb(10, 32, 39);
+        background-color: rgba(0, 0, 0, 0.445);
         border: 5px solid #ffffff;
         border-radius: 20px;
     }
@@ -293,17 +293,75 @@
         opacity: 0.8;
         animation: snow linear infinite;
         z-index: -1;
-        /* In front of the background but behind other content */
     }
 
-    /* Additional styling for larger screens */
     @media (min-width: 600px) {
         .snowflake {
             width: 4px;
             height: 4px;
         }
+    }
 
 
+    @media only screen and (max-width: 720px) {
 
-      
+        .texto1,
+        .texto2,
+        .texto3,
+        .texto4 {
+            display: none;
+            ;
+        }
+
+        .container {
+            width: 70vw;
+            height: 80vh;
+            background-color: rgba(10, 32, 39, 0.719);
+            border: 5px solid #ffffff;
+            border-radius: 20px;
+        }
+
+        .imagem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.10vw;
+            width: 100%;
+            height: 19vh;
+        }
+
+        .imagem img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 0.8vw solid #fff;
+            object-fit: cover;
+
+        }
+
+        #teste {
+            color: white;
+            font-size: 6vw;
+            display: flex;
+            justify-content: center;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 880;
+            font-style: normal;
+        }
+
+        .texto {
+
+            color: #fff;
+            font-size: 2vh;
+            width: 90vw;
+            height: 100%;
+            margin-left: 2.4vh;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 5vh;
+        }
+
     }
