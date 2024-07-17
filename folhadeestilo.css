@@ -11,15 +11,11 @@
         background-size: cover;
         background-position: center;
         width: 100%;
-        position: absolute;
-
-    }
-
-    body,
-    html {
         position: relative;
         overflow: hidden;
+
     }
+
 
     body::before {
         content: '';
@@ -36,14 +32,17 @@
         filter: blur(4px);
     }
 
-    .texto1 {
+
+/* Define os textos dentro das caixinhas de informações posicionadas nos cantos da tela */
+
+
+    .texto1, .texto2, .texto3, .texto4{
         box-sizing: border-box;
         margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         border: #ffffffdf solid 0.2vw;
-        ;
         width: 16vw;
         height: 13vh;
         background-color: rgba(0, 0, 0, 0.315);
@@ -53,174 +52,56 @@
         font-style: normal;
         font-size: 2.6vw;
         position: absolute;
-        top: 3vh;
-        left: 1vw;
         border-radius: 10px;
         color: #fff;
-
     }
 
-    .texto1 .t1 {
-        top: 15vh;
-        left: 0;
-        visibility: hidden;
-        opacity: 0;
-        width: 25vw;
-        background-color: rgba(0, 0, 0, 0.445);
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        transition: visibility 0s, opacity 1s linear;
-        font-size: 2vw;
-        border-radius: 10px;
-        border: #ffffff65 solid 2px;
-    }
 
-    .texto1:hover .t1 {
-        visibility: visible;
-        opacity: 1;
-    }
+/*Define as animações e textos que estão dentro das caixinhas de informações nos cantos da tela*/
 
-    .texto2 {
-        box-sizing: border-box;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: #ffffffdf solid 0.2vw;
-        ;
-        width: 16vw;
-        height: 13vh;
-        background-color: rgba(0, 0, 0, 0.315);
-        border-radius: 10px;
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 2.6vw;
-        position: absolute;
-        top: 3vh;
-        right: 1vw;
 
-        color: #fff;
-    }
+.texto1 .t1,
+.texto2 .t2,
+.texto3 .t3,
+.texto4 .t4{
+    visibility: hidden;
+    opacity: 0;
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    transition: visibility 0s, opacity 1s linear;
+    border-radius: 10px;
+    border: #ffffff65 solid 2px;
+}
 
-    .texto2 .t2 {
+/*Posisiona as caixinhas nos cantos da tela*/
 
-        top: 15vh;
-        right: 0;
-        visibility: hidden;
-        opacity: 0;
-        width: 25vw;
-        background-color: rgba(0, 0, 0, 0.445);
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        transition: visibility 0s, opacity 1s linear;
-        border-radius: 10px;
-        border: #ffffff65 solid 2px;
-    }
+    .texto1 { top: 3vh; left: 1vw;}
+    .texto2 { top: 3vh; right: 1vw;}
+    .texto3 { bottom: 3vh; left: 1vw;}
+    .texto4 { bottom: 3vh; right: 1vw;}
 
-    .texto2:hover .t2 {
-        visibility: visible;
-        opacity: 1;
-    }
+/*Posisiona as caixinhas das animações nos cantos da tela*/
+    .texto1 .t1 { top: 15vh; left: 0;}
+    .texto2 .t2 { top: 15vh; right: 0;}
+    .texto3 .t3 { bottom: 15vh; left: 0;}
+    .texto4 .t4 { bottom: 15vh; right: 0;}
 
-    .texto3 {
-        box-sizing: border-box;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: #ffffffdf solid 0.2vw;
-        ;
-        width: 16vw;
-        height: 13vh;
-        background-color: rgba(0, 0, 0, 0.315);
-        border-radius: 10px;
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 2.6vw;
-        position: absolute;
-        bottom: 3vh;
-        left: 1vw;
-        color: #fff;
-    }
 
-    .texto3 .t3 {
-        bottom: 15vh;
-        left: 0;
-        visibility: hidden;
-        opacity: 0;
-        width: 25vw;
-        background-color: rgba(0, 0, 0, 0.445);
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        transition: visibility 0s, opacity 1s linear;
-        border-radius: 10px;
-        border: #ffffff65 solid 2px;
-    }
-
-    .texto3:hover .t3 {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .texto4 {
-        box-sizing: border-box;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: #ffffffdf solid 0.2vw;
-        ;
-        width: 16vw;
-        height: 13vh;
-        background-color: rgba(0, 0, 0, 0.315);
-        border-radius: 10px;
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 2.6vw;
-        position: absolute;
-        bottom: 3vh;
-        right: 1vw;
-        color: #fff;
-    }
-
-    .texto4 .t4 {
-        bottom: 15vh;
-        right: 0;
-        visibility: hidden;
-        opacity: 0;
-        width: 25vw;
-        background-color: rgba(0, 0, 0, 0.445);
-        color: #fff;
-        text-align: center;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        transition: visibility 0s, opacity 1s linear;
-        border-radius: 10px;
-        border: #ffffff65 solid 2px;
-    }
-
+/*Define a opacidade e visibilidade das caixinhas que estão dentro das animações*/
+    .texto1:hover .t1,
+    .texto2:hover .t2,
+    .texto3:hover .t3,
     .texto4:hover .t4 {
         visibility: visible;
         opacity: 1;
     }
 
-
+/*Define o tamanho da telinha principal do centro*/
     .container {
         width: 27vw;
         height: 80vh;
@@ -229,6 +110,7 @@
         border-radius: 20px;
     }
 
+/*Posiciona da foto de perfil*/
     .imagem {
         display: flex;
         align-items: center;
@@ -293,8 +175,8 @@
     .snowflake {
         position: absolute;
         top: -10px;
-        width: 0.1px;
-        height: 0.1px;
+        width: 3px;
+        height: 5px;
         background: white;
         border-radius: 50%;
         opacity: 0.8;
@@ -305,13 +187,204 @@
 
 
 
-    @media only screen and (max-width: 720px) {
+    /*------------------------------------2560px (responsivo) -----------------------------------*/
+
+
+
+
+
+    @media only screen and (max-width: 2560px) {
+        #teste {
+            font-size: 42px;
+        }
+
+        .texto {
+            font-size: 25px;
+        }
+    }
+
+
+
+
+    /*------------------------------------1440px (responsivo) -----------------------------------*/
+
+
+
+
+
+    @media only screen and (max-width: 1440px) {
+        #teste {
+            font-size: 40px;
+        }
+
+        .texto {
+            width: 100%;
+            font-size: 25px;
+            margin-top: -20px;
+        }
+
+        .container {
+            width: 35vw;
+            height: 80vh;
+            background-color: rgba(0, 0, 0, 0.445);
+            border: 5px solid #ffffff;
+            border-radius: 20px;
+        }
+
+        .imagem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2vw;
+            width: 100%;
+            height: 19vh;
+            top: 20px;
+        }
+
+        .imagem img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+
+
+
+    /*------------------------------------1024px (responsivo) -----------------------------------*/
+
+
+
+
+
+    @media only screen and (max-width: 1024px) {
+        #teste {
+            font-size: 20=8px;
+        }
+
+        .texto {
+            font-size: 22px;
+        }
+    }
+
+
+
+
+    /*------------------------------------946px (responsivo) -----------------------------------*/
+
+
+
+
+    @media only screen and (max-width: 946px) {
+
+
+
+        .container {
+            width: 40vw;
+            height: 80vh;
+
+        }
+
+        .imagem {
+            margin-top: 1.10vw;
+            width: 100%;
+            height: 19vh;
+        }
+
+        .imagem img {
+            width: 120px;
+            height: 120px;
+            border: 0.8vw solid #fff;
+
+
+        }
+
+        #teste {
+            color: white;
+            font-size: 4vh;
+        }
+
+        .texto {
+
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            line-height: 5vh;
+        }
+
+        .snowflake {
+            width: 3px;
+            height: 3px;
+        }
+
+    }
+
+
+
+
+    /*------------------------------------718x (responsivo) -----------------------------------*/
+
+
+
+
+    @media only screen and (max-width: 718px) {
+
+
+
+        .container {
+            width: 40vw;
+            height: 80vh;
+
+        }
+
+        .imagem {
+            margin-top: 1.10vw;
+            width: 100%;
+            height: 19vh;
+        }
+
+        .imagem img {
+            width: 120px;
+            height: 120px;
+            border: 0.8vw solid #fff;
+
+
+        }
+
+        #teste {
+            color: white;
+            font-size: 4.5vw;
+        }
+
+        .texto {
+
+            font-size: 15px;
+            width: 100%;
+            height: 100%;
+            line-height: 5vh;
+        }
+
+        .snowflake {
+            width: 3px;
+            height: 3px;
+        }
+
+    }
+
+
+
+
+    /*------------------------------------490px (responsivo) -----------------------------------*/
+
+
+
+
+    @media only screen and (max-width: 500px) {
 
         .texto1,
         .texto2,
         .texto3,
         .texto4 {
-        display: none;
+            display: none;
         }
 
         .container {
@@ -340,8 +413,116 @@
         }
 
         .texto {
-            
+
             font-size: 4.6vw;
+            width: 100%;
+            height: 100%;
+            line-height: 5vh;
+        }
+
+        .snowflake {
+            width: 3px;
+            height: 3px;
+        }
+
+    }
+
+    /*------------------------------------376px (responsivo) -----------------------------------*/
+
+
+
+
+    @media only screen and (max-width: 410px) {
+
+        .texto1,
+        .texto2,
+        .texto3,
+        .texto4 {
+            display: none;
+        }
+
+        .container {
+            width: 70vw;
+            height: 80vh;
+
+        }
+
+        .imagem {
+            margin-top: 1.10vw;
+            width: 100%;
+            height: 19vh;
+        }
+
+        .imagem img {
+            width: 120px;
+            height: 120px;
+            border: 0.8vw solid #fff;
+
+
+        }
+
+        #teste {
+            color: white;
+            font-size: 3vh;
+        }
+
+        .texto {
+
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
+            line-height: 5vh;
+        }
+
+        .snowflake {
+            width: 3px;
+            height: 3px;
+        }
+
+    }
+
+    /*------------------------------------320px (responsivo) -----------------------------------*/
+
+
+
+
+    @media only screen and (max-width: 323px) {
+
+        .texto1,
+        .texto2,
+        .texto3,
+        .texto4 {
+            display: none;
+        }
+
+        .container {
+            width: 80vw;
+            height: 80vh;
+
+        }
+
+        .imagem {
+            margin-top: 1.10vw;
+            width: 100%;
+            height: 19vh;
+        }
+
+        .imagem img {
+            width: 120px;
+            height: 120px;
+            border: 0.8vw solid #fff;
+
+
+        }
+
+        #teste {
+            color: white;
+            font-size: 30px;
+        }
+
+        .texto {
+
+            font-size: 18px;
             width: 100%;
             height: 100%;
             line-height: 5vh;
